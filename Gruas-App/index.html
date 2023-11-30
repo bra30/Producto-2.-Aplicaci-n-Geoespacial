@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login con Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://lirp.cdn-website.com/3c614c1d/dms3rep/multi/opt/RS4559102-2555x3830_2-1920w.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <form action="validar.php" method="post">
+                <h1 class="animate__animated animate__backInLeft">Sistema de login</h1>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="username" placeholder="Ingrese su usuario" name="usuario" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" name="contraseña" required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
